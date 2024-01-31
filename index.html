@@ -8,7 +8,7 @@
 </head>
 <body>
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-md shadow">
+    <nav class="navbar fixed-top navbar-expand-md shadow">
         <div class="container-xl">
             <a href="#" class="navbar-brand">
                 Kaur Tamm Portfolio
@@ -21,13 +21,13 @@
             <div class="collapse navbar-collapse justify-content-end align-center" id="main-nav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About Me</a>
+                        <a class="nav-link" href="#about-me">About Me</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Projects</a>
+                        <a class="nav-link" href="#projects">Projects</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
+                        <a class="nav-link" href="#contact">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -35,7 +35,7 @@
     </nav>
     <!-- About Me section -->
     <section id="about-me">
-        <div class="container-xl py-5">
+        <div class="container-xl py-5 mt-5">
             <div class="row text-center">
                 <div class="col-md-6 d-flex flex-column-reverse text-md-start">
                     <div>
@@ -53,7 +53,7 @@
         <div class="container-xl py-5">
             <div class="row">
                 <div class="col-md-6">
-                    <h1 class="display-4">My Skills</h1>
+                    <h2 class="display-4">My Skills</h1>
                     <div class="row my-3">
                         <div class="col-6">
                             <h6>HTML</h6>
@@ -86,7 +86,7 @@
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <h1 class="display-4">Courses</h1>
+                    <h2 class="display-4">Courses</h1>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad quaerat recusandae veniam quibusdam harum rerum quisquam vero sit illum ipsum delectus pariatur soluta aliquid dolor molestiae quidem, provident, impedit reprehenderit qui cupiditate, ab vel fugit. Minus minima ducimus ad molestias quae laboriosam, nobis odit in dicta iusto facilis, tenetur perferendis!</p>
                 </div>
             </div>
@@ -95,11 +95,75 @@
     <hr>
     <section id="projects">
         <div class="container-xl py-5">
-            <div class="row text-center">
+            <div class="row text-center mb-5">
                 <div class="col-md-6 text-md-start">
                     <div>
                         <h1 class="display-1">My Projects</h1>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque nemo doloremque voluptatum, laborum illum vero exercitationem accusantium facere ullam vitae voluptatem, earum amet nisi impedit fugiat eaque quasi porro, rerum iure sapiente sit fugit beatae doloribus facilis? Explicabo, perferendis fugit odit nisi ullam quos unde officia. Voluptate provident tempora obcaecati!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row text-center mb-5">
+                <div class="col-sm-6 col-lg-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center d-flex flex-column">
+                            <a href="https://kaurvs23.ikt.khk.ee/programmeerimise_alused/Flag%20Game/"><img src="/img/project-image01.png" class="card-img-top" alt="Project image"></a>
+                            <a href="https://kaurvs23.ikt.khk.ee/programmeerimise_alused/Flag%20Game/"><h4 class="card-title mt-3">Flag Guessing Game</h4></a>
+                            <p class="card-text px-4 flex-grow-1">This is an educational game I wrote for my Javascript class. It was my first time working with a JSON file to get all the flags and country names. Give it a try!</p>
+                            <div class="card-footer text-body-secondary">Javascript</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center d-flex flex-column">
+                            <a href="https://kaurvs23.ikt.khk.ee/programmeerimise_alused/T%c3%a4ringum%c3%a4ng/"><img src="/img/project-image02.png" class="card-img-top " alt="Project image"></a>
+                            <a href="https://kaurvs23.ikt.khk.ee/programmeerimise_alused/T%c3%a4ringum%c3%a4ng/"><h4 class="card-title mt-3">Dice Throw Generator</h4></a>
+                            <p class="card-text px-4 flex-grow-1">A program that takes the amount of d6 dice as input and outputs the result of the dice. It also shows the sum of the dice.</p>
+                            <div class="card-footer text-body-secondary">Javascript</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6  col-lg-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center d-flex flex-column">
+                            <a href="https://kaurvs23.ikt.khk.ee/programmeerimise_alused/Nord%20Pool%20igal%20pool/"><img src="/img/project-image03.png" class="card-img-top " alt="Project image"></a>
+                            <a href="https://kaurvs23.ikt.khk.ee/programmeerimise_alused/Nord%20Pool%20igal%20pool/"><h4 class="card-title mt-3">Dice Throw Generator</h4></a>
+                            <p class="card-text px-4 flex-grow-1">A simple reaction speed game where you have to wait for the right moment to match 3 card suits of any kind.</p>
+                            <div class="card-footer text-body-secondary">Javascript</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-sm-6 col-lg-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center d-flex flex-column">
+                            <a href="https://kaurvs23.ikt.khk.ee/veebiarendus/OrkGame/"><img src="/img/project-image04.png" class="card-img-top" alt="Project image"></a>
+                            <a href="https://kaurvs23.ikt.khk.ee/veebiarendus/OrkGame/"><h4 class="card-title mt-3">Retro Game Webpage</h4></a>
+                            <p class="card-text px-4 flex-grow-1">This sample site was made together with my friend from my course. It was my first group project and for that reason taught me the basics of using GitHub. The design is inspired by early 2000s browser games.</p>
+                            <div class="card-footer text-body-secondary">HTML & CSS</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6  col-lg-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center d-flex flex-column">
+                            <a href="https://kaurvs23.ikt.khk.ee/veebiarendus/Disain%20Firma/"><img src="/img/project-image06.png" class="card-img-top " alt="Project image"></a>
+                            <a href="https://kaurvs23.ikt.khk.ee/veebiarendus/Disain%20Firma/"><h4 class="card-title mt-3">Design Studio Webpage</h4></a>
+                            <p class="card-text px-4 flex-grow-1">A single page sample website designed for a design studio.</p>
+                            <div class="card-footer text-body-secondary">HTML & CSS</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center d-flex flex-column">
+                            <a href="https://kaurvs23.ikt.khk.ee/veebiarendus/Raamatukogu/"><img src="/img/project-image05.png" class="card-img-top " alt="Project image"></a>
+                            <a href="https://kaurvs23.ikt.khk.ee/veebiarendus/Raamatukogu/"><h4 class="card-title mt-3">Library Webpage</h4></a>
+                            <p class="card-text px-4 flex-grow-1">A multi page sample website designed for a library. One of my first pages created.</p>
+                            <div class="card-footer text-body-secondary">HTML & CSS</div>
+                        </div>
                     </div>
                 </div>
             </div>
