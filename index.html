@@ -1,9 +1,11 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <title>My Portfolio</title>
 </head>
 <body>
@@ -21,7 +23,7 @@
             <div class="collapse navbar-collapse justify-content-end align-center" id="main-nav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="#about-me">About Me</a>
+                        <a class="nav-link" href="#">About Me</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#projects">Projects</a>
@@ -36,14 +38,14 @@
     <!-- About Me section -->
     <section id="about-me">
         <div class="container-xl py-5 mt-5">
-            <div class="row text-center">
-                <div class="col-md-6 d-flex flex-column-reverse text-md-start">
+            <div class="row text-center d-flex justify-content-center">
+                <div class="col-sm-8 col-lg-6 d-flex flex-column-reverse text-lg-start">
                     <div>
                         <h1 class="display-1">About Me</h1>
-                        <p>Hello! My name is Kaur and I’m a 28 year old aspiring junior software developer currently studying as a first year student at Tartu Vocational College. I’ve been interested in everything to do with computers since I was young and I love solving problems related to coding. I’m working hard to be a full-stack developer capable of tackling any issue. My other hobbies include playing board games and the guitar.</p>
+                        <p class="pe-lg-5">Hello! My name is Kaur and I’m a 28 year old aspiring junior software developer currently studying as a first year student at Tartu Vocational College. I’ve been interested in everything to do with computers since I was young and I love solving problems related to coding. I’m working hard to be a full-stack developer capable of tackling any issue. My other hobbies include playing board games and the guitar.</p>
                     </div>
                 </div>
-                <div class="col-md-6 text-md-end portrait-img">
+                <div class="col-sm-8 col-lg-6 text-lg-end portrait-img">
                     <img src="/img/portrait.jpg" alt="Portrait picture" class="img-fluid rounded">
                 </div>
             </div>
@@ -51,9 +53,13 @@
         <hr>
         <!-- My Skills and Courses -->
         <div class="container-xl py-5">
-            <div class="row">
-                <div class="col-md-6">
-                    <h2 class="display-4">My Skills</h1>
+            <div class="row d-flex justify-content-center text-center">
+                <div class="col-sm-8 col-lg-6 text-lg-start">
+                    <h2 class="display-4 mb-5">My Skills</h1>
+                    <p class="pe-lg-5">Currently I've mostly focused on studying front-end - HTML, CSS and Javascript - but I've also gotten my feet wet with some back-end, like using MariaDB. On top of that have some experience using GitHub and Wordpress. Recently I've started to learn React to take my front-end skills to the next level and in the future I want to learn more about Javascript along different back-end technologies. I've added some progress bars to illustrate my percieved knowledge.</p>
+                </div>
+                <div class="col-sm-8 col-lg-6 text-lg-start">
+                    <h2 class="display-4 mb-5 mt-5 mt-lg-0">Progress</h1>
                     <div class="row my-3">
                         <div class="col-6">
                             <h6>HTML</h6>
@@ -85,82 +91,80 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6">
-                    <h2 class="display-4">Courses</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad quaerat recusandae veniam quibusdam harum rerum quisquam vero sit illum ipsum delectus pariatur soluta aliquid dolor molestiae quidem, provident, impedit reprehenderit qui cupiditate, ab vel fugit. Minus minima ducimus ad molestias quae laboriosam, nobis odit in dicta iusto facilis, tenetur perferendis!</p>
-                </div>
             </div>
         </div>
     </section>
     <hr>
+    <!-- My Projects section -->
     <section id="projects">
-        <div class="container-xl py-5">
-            <div class="row text-center mb-5">
-                <div class="col-md-6 text-md-start">
+        <div class="container-xl pt-5">
+            <div class="row text-center mb-5 d-flex justify-content-center">
+                <div class="col-sm-8">
                     <div>
                         <h1 class="display-1">My Projects</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque nemo doloremque voluptatum, laborum illum vero exercitationem accusantium facere ullam vitae voluptatem, earum amet nisi impedit fugiat eaque quasi porro, rerum iure sapiente sit fugit beatae doloribus facilis? Explicabo, perferendis fugit odit nisi ullam quos unde officia. Voluptate provident tempora obcaecati!</p>
+                        <p>These are some of my front-end works I've done during my first year studying to be a junior software developer. Feel free to click around and check them out. Also, this portfolio is a project in and of itself. It's my first project using bootsrap 5 and was a lot of fun to write.</p>
                     </div>
                 </div>
             </div>
-            <div class="row text-center mb-5">
-                <div class="col-sm-6 col-lg-4">
+            <!-- Cards -->
+            <div class="row text-center d-flex justify-content-center">
+                <div class="col-sm-8 col-md-7 col-lg-4 mb-5">
                     <div class="card h-100">
                         <div class="card-body text-center d-flex flex-column">
-                            <a href="https://kaurvs23.ikt.khk.ee/programmeerimise_alused/Flag%20Game/"><img src="/img/project-image01.png" class="card-img-top" alt="Project image"></a>
-                            <a href="https://kaurvs23.ikt.khk.ee/programmeerimise_alused/Flag%20Game/"><h4 class="card-title mt-3">Flag Guessing Game</h4></a>
+                            <img src="/img/project-image01.png" class="card-img-top" alt="Project image">
+                            <a href="https://kaurvs23.ikt.khk.ee/programmeerimise_alused/Flag%20Game/"><h4 class="card-title mt-3 stretched-link">Flag Guessing Game</h4></a>
                             <p class="card-text px-4 flex-grow-1">This is an educational game I wrote for my Javascript class. It was my first time working with a JSON file to get all the flags and country names. Give it a try!</p>
                             <div class="card-footer text-body-secondary">Javascript</div>
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-6 col-lg-4">
+                <div class="col-sm-8 col-md-7 col-lg-4 mb-5">
                     <div class="card h-100">
                         <div class="card-body text-center d-flex flex-column">
-                            <a href="https://kaurvs23.ikt.khk.ee/programmeerimise_alused/T%c3%a4ringum%c3%a4ng/"><img src="/img/project-image02.png" class="card-img-top " alt="Project image"></a>
-                            <a href="https://kaurvs23.ikt.khk.ee/programmeerimise_alused/T%c3%a4ringum%c3%a4ng/"><h4 class="card-title mt-3">Dice Throw Generator</h4></a>
+                            <img src="/img/project-image02.png" class="card-img-top" alt="Project image">
+                            <a href="https://kaurvs23.ikt.khk.ee/programmeerimise_alused/T%c3%a4ringum%c3%a4ng/"><h4 class="card-title mt-3 stretched-link">Dice Throw Generator</h4></a>
                             <p class="card-text px-4 flex-grow-1">A program that takes the amount of d6 dice as input and outputs the result of the dice. It also shows the sum of the dice.</p>
                             <div class="card-footer text-body-secondary">Javascript</div>
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-6  col-lg-4">
+                <div class="col-sm-8 col-md-7 col-lg-4 mb-5">
                     <div class="card h-100">
                         <div class="card-body text-center d-flex flex-column">
-                            <a href="https://kaurvs23.ikt.khk.ee/programmeerimise_alused/Nord%20Pool%20igal%20pool/"><img src="/img/project-image03.png" class="card-img-top " alt="Project image"></a>
-                            <a href="https://kaurvs23.ikt.khk.ee/programmeerimise_alused/Nord%20Pool%20igal%20pool/"><h4 class="card-title mt-3">Dice Throw Generator</h4></a>
+                            <img src="/img/project-image03.png" class="card-img-top " alt="Project image">
+                            <a href="https://kaurvs23.ikt.khk.ee/programmeerimise_alused/Nord%20Pool%20igal%20pool/"><h4 class="card-title mt-3 stretched-link">Dice Throw Generator</h4></a>
                             <p class="card-text px-4 flex-grow-1">A simple reaction speed game where you have to wait for the right moment to match 3 card suits of any kind.</p>
                             <div class="card-footer text-body-secondary">Javascript</div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="row text-center">
-                <div class="col-sm-6 col-lg-4">
+            <div class="row text-center d-flex justify-content-center">
+                <div class="col-sm-8 col-md-7 col-lg-4 mb-5">
                     <div class="card h-100">
                         <div class="card-body text-center d-flex flex-column">
-                            <a href="https://kaurvs23.ikt.khk.ee/veebiarendus/OrkGame/"><img src="/img/project-image04.png" class="card-img-top" alt="Project image"></a>
-                            <a href="https://kaurvs23.ikt.khk.ee/veebiarendus/OrkGame/"><h4 class="card-title mt-3">Retro Game Webpage</h4></a>
+                            <img src="/img/project-image04.png" class="card-img-top" alt="Project image">
+                            <a href="https://kaurvs23.ikt.khk.ee/veebiarendus/OrkGame/"><h4 class="card-title mt-3 stretched-link">Retro Game Webpage</h4></a>
                             <p class="card-text px-4 flex-grow-1">This sample site was made together with my friend from my course. It was my first group project and for that reason taught me the basics of using GitHub. The design is inspired by early 2000s browser games.</p>
                             <div class="card-footer text-body-secondary">HTML & CSS</div>
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-6  col-lg-4">
+                <div class="col-sm-8 col-md-7 col-lg-4 mb-5">
                     <div class="card h-100">
                         <div class="card-body text-center d-flex flex-column">
-                            <a href="https://kaurvs23.ikt.khk.ee/veebiarendus/Disain%20Firma/"><img src="/img/project-image06.png" class="card-img-top " alt="Project image"></a>
-                            <a href="https://kaurvs23.ikt.khk.ee/veebiarendus/Disain%20Firma/"><h4 class="card-title mt-3">Design Studio Webpage</h4></a>
+                            <img src="/img/project-image06.png" class="card-img-top " alt="Project image">
+                            <a href="https://kaurvs23.ikt.khk.ee/veebiarendus/Disain%20Firma/"><h4 class="card-title mt-3 stretched-link">Design Studio Webpage</h4></a>
                             <p class="card-text px-4 flex-grow-1">A single page sample website designed for a design studio.</p>
                             <div class="card-footer text-body-secondary">HTML & CSS</div>
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-6 col-lg-4">
+                <div class="col-sm-8 col-md-7 col-lg-4 mb-5">
                     <div class="card h-100">
                         <div class="card-body text-center d-flex flex-column">
-                            <a href="https://kaurvs23.ikt.khk.ee/veebiarendus/Raamatukogu/"><img src="/img/project-image05.png" class="card-img-top " alt="Project image"></a>
-                            <a href="https://kaurvs23.ikt.khk.ee/veebiarendus/Raamatukogu/"><h4 class="card-title mt-3">Library Webpage</h4></a>
+                            <img src="/img/project-image05.png" class="card-img-top " alt="Project image">
+                            <a href="https://kaurvs23.ikt.khk.ee/veebiarendus/Raamatukogu/"><h4 class="card-title mt-3 stretched-link">Library Webpage</h4></a>
                             <p class="card-text px-4 flex-grow-1">A multi page sample website designed for a library. One of my first pages created.</p>
                             <div class="card-footer text-body-secondary">HTML & CSS</div>
                         </div>
@@ -169,6 +173,55 @@
             </div>
         </div>
     </section>
+    <hr>
+    <!-- Contact section -->
+    <section id="contact">
+        <div class="container-xl py-5">
+            <div class="row text-center d-flex justify-content-center">
+                <div class="col-sm-8">
+                    <div>
+                        <h2 class="display-1">Contact Me</h2>
+                        <p class="mb-5">Feel free to contact me on any of the platforms below for more information or just to chat! You can also click <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal">here</a> to see my CV.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row text-center d-flex justify-content-center">
+                <div class="col-sm-8">
+                    <div>
+                        <ul class="list-group list-group-flush mt-5">
+                            <li class="list-group-item ps-0 d-flex justify-content-between"><h5><i class="bi bi-envelope-fill"></i> Email</h5>kaur.tamm@voco.ee</li>
+                            <li class="list-group-item ps-0 d-flex justify-content-between"><h5><i class="bi bi-telephone-fill"></i> Phone</h5>534 66 564</li>
+                            <li class="list-group-item ps-0 d-flex justify-content-between"><h5><i class="bi bi-discord"></i> Discord</h5>gaor_jjj</li>
+                            <li class="list-group-item ps-0 d-flex justify-content-between"><h5><i class="bi bi-github"></i> Github</h5>gaor-jjj</li>
+                        </ul>
+                    </div>
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Curriculum Vitae</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <object type="application/pdf" data="/Other/InteraktiivneCV.pdf" width="100%" height="600px" view="fit">
+                                    </object>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer  class="mt-5">
+        <div class="text-center py-3 bg-secondary">
+            Kaur Tamm
+        </div>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>
