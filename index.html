@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link href="style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <title>My Portfolio</title>
 </head>
@@ -12,7 +15,7 @@
     <!-- Navigation -->
     <nav class="navbar fixed-top navbar-expand-md shadow">
         <div class="container-xl">
-            <a href="#" class="navbar-brand">
+            <a href="#" class="navbar-brand cardo fs-3 gold-underline link-offset-2">
                 Kaur Tamm Portfolio
             </a>
             <!-- Mobile navigation toggle -->
@@ -23,13 +26,13 @@
             <div class="collapse navbar-collapse justify-content-end align-center" id="main-nav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About Me</a>
+                        <a class="nav-link link-offset-3" href="#">About Me</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#projects">Projects</a>
+                        <a class="nav-link link-offset-3" href="#projects">Projects</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
+                        <a class="nav-link link-offset-3" href="#contact">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -37,12 +40,12 @@
     </nav>
     <!-- About Me section -->
     <section id="about-me">
-        <div class="container-xl py-5 mt-5">
+        <div class="container-xl py-5 mt-5 min-vh-100">
             <div class="row text-center d-flex justify-content-center">
                 <div class="col-sm-8 col-lg-6 d-flex flex-column-reverse text-lg-start">
                     <div>
-                        <h1 class="display-1">About Me</h1>
-                        <p class="pe-lg-5">Hello! My name is Kaur and I’m a 28 year old aspiring junior software developer currently studying as a first year student at Tartu Vocational College. I’ve been interested in everything to do with computers since I was young and I love solving problems related to coding. I’m working hard to be a full-stack developer capable of tackling any issue. My other hobbies include playing board games and the guitar.</p>
+                        <h1 class="display-2 cardo highlight">About Me</h1>
+                        <p class="pe-lg-5 mt-5">Hello! My name is Kaur and I’m a 28 year old aspiring junior software developer currently studying as a first year student at Tartu Vocational College. I’ve been interested in everything to do with computers since I was young and I love solving problems related to coding. I’m working hard to be a full-stack developer capable of tackling any issue. My other hobbies include playing board games and the guitar.</p>
                     </div>
                 </div>
                 <div class="col-sm-8 col-lg-6 text-lg-end portrait-img">
@@ -50,23 +53,23 @@
                 </div>
             </div>
         </div>
-        <hr>
+        
         <!-- My Skills and Courses -->
         <div class="container-xl py-5">
             <div class="row d-flex justify-content-center text-center">
                 <div class="col-sm-8 col-lg-6 text-lg-start">
-                    <h2 class="display-4 mb-5">My Skills</h1>
+                    <h2 class="mb-5 cardo gold-underline">My Skills</h1>
                     <p class="pe-lg-5">Currently I've mostly focused on studying front-end - HTML, CSS and Javascript - but I've also gotten my feet wet with some back-end, like using MariaDB. On top of that have some experience using GitHub and Wordpress. Recently I've started to learn React to take my front-end skills to the next level and in the future I want to learn more about Javascript along different back-end technologies. I've added some progress bars to illustrate my percieved knowledge.</p>
                 </div>
                 <div class="col-sm-8 col-lg-6 text-lg-start">
-                    <h2 class="display-4 mb-5 mt-5 mt-lg-0">Progress</h1>
+                    <h2 class="mb-5 mt-5 mt-lg-0 cardo gold-underline">Progress</h1>
                     <div class="row my-3">
                         <div class="col-6">
                             <h6>HTML</h6>
                         </div>
                         <div class="col-6">
-                            <div class="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-                                <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 75%">75%</div>
+                            <div class="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 90%">90%</div>
                             </div>
                         </div>
                     </div>
@@ -75,8 +78,8 @@
                             <h6>CSS</h6>
                         </div>
                         <div class="col-6">
-                            <div class="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-                                <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" style="width: 75%">75%</div>
+                            <div class="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" style="width: 70%">70%</div>
                             </div>
                         </div>
                     </div>
@@ -85,8 +88,8 @@
                             <h6>Javascript</h6>
                         </div>
                         <div class="col-6">
-                            <div class="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-                                <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" style="width: 75%">75%</div>
+                            <div class="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" style="width: 40%">40%</div>
                             </div>
                         </div>
                     </div>
@@ -101,8 +104,8 @@
             <div class="row text-center mb-5 d-flex justify-content-center">
                 <div class="col-sm-8">
                     <div>
-                        <h1 class="display-1">My Projects</h1>
-                        <p>These are some of my front-end works I've done during my first year studying to be a junior software developer. Feel free to click around and check them out. Also, this portfolio is a project in and of itself. It's my first project using bootsrap 5 and was a lot of fun to write.</p>
+                        <h1 class="display-2 cardo highlight">My Projects</h1>
+                        <p class="mt-5">These are some of my front-end works I've done during my first year studying to be a junior software developer. Feel free to click around and check them out. Also, this portfolio is a project in and of itself. It's my first project using bootsrap 5 and was a lot of fun to write.</p>
                     </div>
                 </div>
             </div>
@@ -180,8 +183,8 @@
             <div class="row text-center d-flex justify-content-center">
                 <div class="col-sm-8">
                     <div>
-                        <h2 class="display-1">Contact Me</h2>
-                        <p class="mb-5">Feel free to contact me on any of the platforms below for more information or just to chat! You can also click <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal">here</a> to see my CV.</p>
+                        <h2 class="display-2 cardo highlight">Contact Me</h2>
+                        <p class="my-5">Feel free to contact me on any of the platforms below for more information or just to chat! You can also click <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal">here</a> to see my CV.</p>
                     </div>
                 </div>
             </div>
@@ -192,7 +195,7 @@
                             <li class="list-group-item ps-0 d-flex justify-content-between"><h5><i class="bi bi-envelope-fill"></i> Email</h5>kaur.tamm@voco.ee</li>
                             <li class="list-group-item ps-0 d-flex justify-content-between"><h5><i class="bi bi-telephone-fill"></i> Phone</h5>534 66 564</li>
                             <li class="list-group-item ps-0 d-flex justify-content-between"><h5><i class="bi bi-discord"></i> Discord</h5>gaor_jjj</li>
-                            <li class="list-group-item ps-0 d-flex justify-content-between"><h5><i class="bi bi-github"></i> Github</h5>gaor-jjj</li>
+                            <li class="list-group-item ps-0 d-flex justify-content-between"><h5><i class="bi bi-github"></i> Github</h5><a href="https://github.com/Gaor-jjj " target="_blank">gaor-jjj</a></li>
                         </ul>
                     </div>
                     <!-- Modal -->
@@ -217,9 +220,9 @@
             </div>
         </div>
     </section>
-    <footer  class="mt-5">
-        <div class="text-center py-3 bg-secondary">
-            Kaur Tamm
+    <footer>
+        <div class="text-center py-3">
+            Kaur Tamm - VOCO - VS23
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>

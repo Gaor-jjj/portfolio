@@ -1,13 +1,29 @@
-nav {
-    background: rgb(250, 250, 249, 98%);
+/* Overall */
+*  {
+    font-family: 'Montserrat', sans-serif;
 }
 
-.portrait-img img {
-    max-height: 600px;
+body {
+    background-color: #FAFAF9;
 }
 
-.progress {
-    height: 25px;
+section {
+    min-height: 70vh;
+    padding-top: 68px;
+}
+
+a {
+    color: #136F63;
+    text-decoration: none;
+}
+
+.cardo {
+    font-family: 'Cardo', serif;
+}
+
+.gold-underline {
+    text-decoration: underline;
+    text-decoration-color: #C89B3C;
 }
 
 hr {
@@ -16,17 +32,78 @@ hr {
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
 }
 
+.highlight {
+    display: inline;
+    margin: 0 -0.4em;
+    padding: 0.1em 0.4em;
+    border-radius: 0.8em 0.3em;
+    background: transparent;
+    background-image: linear-gradient(
+      to right,
+      rgba(19, 111, 99, 0.3),
+      rgba(19, 111, 99, 0.7) 4%,
+      rgba(19, 111, 99, 0.4)
+    );
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+}
+
+/* Navigation */
+nav {
+    background: rgb(250, 250, 249, 98%);
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+    text-decoration-color: #C89B3C;
+}
+
+/* About Me section */
+.portrait-img img {
+    max-height: 600px;
+}
+
+.progress {
+    height: 25px;
+}
+
+/* Card */
+.card:hover .card-img-top {
+    opacity: 100%;
+}
+
 .card-body {
     padding: 0;
 }
 
 .card-body a {
-    text-decoration: none;
+    background-color: #FAFAF9;
+    color: #136F63;
+}
+
+.card-text {
+    margin: 0;
+    background-color: #FAFAF9;
 }
 
 .card-img-top {
+    filter: grayscale(30%);
+    opacity: 80%;
+    transition: opacity 0.15s ease-in-out;
     height: 30vh;
     width: 100%;
     object-fit: cover;
     object-position: top;
+}
+
+/* */
+.list-group-item {
+    background-color: #FAFAF9;;
+}
+
+/* Footer */
+footer {
+    margin-top: 100px;
+    background-color: #060606;
+    color: #FAFAF9;
 }
