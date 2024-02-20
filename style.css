@@ -68,6 +68,7 @@ nav {
 
 /* Card */
 .card:hover .card-img-top {
+    filter: grayscale(0%);
     opacity: 100%;
 }
 
@@ -86,8 +87,8 @@ nav {
 }
 
 .card-img-top {
-    filter: grayscale(30%);
-    opacity: 80%;
+    filter: grayscale(50%);
+    opacity: 90%;
     transition: opacity 0.15s ease-in-out;
     height: 30vh;
     width: 100%;
