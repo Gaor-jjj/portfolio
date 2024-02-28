@@ -111,7 +111,6 @@ footer {
 /* script animation */
 .hidden {
     opacity: 0;
-    transition: all 0.8s;
     filter: blur(3px);
     transform: translateX(-100%);
 }
@@ -122,8 +121,8 @@ footer {
     transform: translateX(0);
 }
 
-@media(prefers-reduced-motion) {
+@media(prefers-reduced-motion: no-preference) {
     .hidden {
-        transition: none;
+        transition: all 0.8s;
     }
 }
