@@ -9,6 +9,25 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="img/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="img/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="manifest" href="img/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="img/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Scripts -->
     <script src="app.js" defer></script>
     <title>My Portfolio</title>
 </head>
@@ -17,7 +36,7 @@
     <nav class="navbar fixed-top navbar-expand-md shadow">
         <div class="container-xl">
             <a href="#" class="navbar-brand cardo fs-3 gold-underline link-offset-2">
-                Kaur Tamm Portfolio
+                <img src="img/logo.png" class="me-2" height="40px" width="40px">Kaur Tamm Portfolio
             </a>
             <!-- Mobile navigation toggle -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
@@ -41,28 +60,28 @@
     </nav>
     <!-- About Me section -->
     <section id="about-me">
-        <div class="container-xl py-5 mt-5 min-vh-100 hidden">
+        <div class="container-xl pb-5 mt-5 min-vh-100">
             <div class="row text-center d-flex justify-content-center">
                 <div class="col-sm-8 col-lg-6 d-flex flex-column-reverse text-lg-start">
-                    <div>
+                    <div class="hidden">
                         <h1 class="display-2 cardo highlight ms-1">About Me</h1>
                         <p class="pe-lg-5 mt-5">Hello! My name is Kaur and I’m a 28 year old aspiring junior software developer currently studying as a first year student at Tartu Vocational College. I’ve been interested in everything to do with computers since I was young and I love solving problems related to coding. I’m working hard to be a full-stack developer capable of tackling any issue. My other hobbies include playing board games and the guitar.</p>
                     </div>
                 </div>
-                <div class="col-sm-8 col-lg-6 text-lg-end portrait-img">
+                <div class="col-sm-8 col-lg-6 text-lg-end portrait-img hidden">
                     <img src="./img/portrait.jpg" alt="Portrait picture" class="img-fluid rounded">
                 </div>
             </div>
         </div>
         
         <!-- My Skills and Courses -->
-        <div class="container-xl py-5 hidden">
+        <div class="container-xl py-5">
             <div class="row d-flex justify-content-center text-center">
-                <div class="col-sm-8 col-lg-6 text-lg-start">
+                <div class="col-sm-8 col-lg-6 text-lg-start hidden">
                     <h2 class="mb-5 cardo gold-underline link-offset-3">My Skills</h2>
                     <p class="pe-lg-5">Currently I've mostly focused on studying front-end - HTML, CSS and Javascript - but I've also gotten my feet wet with some back-end, like using MariaDB. On top of that have some experience using GitHub and Wordpress. Recently I've started to learn React to take my front-end skills to the next level and in the future I want to learn more about Javascript along different back-end technologies. I've added some progress bars to illustrate my percieved knowledge.</p>
                 </div>
-                <div class="col-sm-8 col-lg-6 text-lg-start">
+                <div class="col-sm-8 col-lg-6 text-lg-start hidden">
                     <h2 class="my-5 mt-lg-0 cardo gold-underline link-offset-3">Progress</h2>
                     <div class="row my-3">
                         <div class="col-6 text-start">
@@ -112,18 +131,18 @@
     <!-- My Projects section -->
     <section id="projects">
         <div class="container-xl pt-5">
-            <div class="row text-center mb-5 d-flex justify-content-center hidden">
+            <div class="row text-center mb-5 d-flex justify-content-center">
                 <div class="col-sm-8">
-                    <div>
+                    <div class="hidden">
                         <h1 class="display-2 cardo highlight">My Projects</h1>
                         <p class="mt-5">These are some of my front-end works I've done during my first year studying to be a junior software developer. Feel free to click around and check them out. Also, this portfolio is a project in and of itself. It's my first project using bootsrap 5 and was a lot of fun to write.</p>
                     </div>
                 </div>
             </div>
             <!-- Cards -->
-            <div class="row text-center d-flex justify-content-center hidden">
+            <div class="row text-center d-flex justify-content-center">
                 <div class="col-sm-8 col-md-7 col-lg-4 mb-5">
-                    <div class="card h-100">
+                    <div class="card h-100 hidden">
                         <div class="card-body text-center d-flex flex-column">
                             <img src="./img/project-image01.png" class="card-img-top" alt="Project image">
                             <a class="gold-underline link-offset-2" href="https://kaurvs23.ikt.khk.ee/programmeerimise_alused/Flag%20Game/" target="_blank"><h4 class="card-title mt-3 stretched-link cardo">Flag Guessing Game</h4></a>
@@ -133,7 +152,7 @@
                     </div>
                 </div>
                 <div class="col-sm-8 col-md-7 col-lg-4 mb-5">
-                    <div class="card h-100">
+                    <div class="card h-100 hidden">
                         <div class="card-body text-center d-flex flex-column">
                             <img src="./img/project-image02.png" class="card-img-top" alt="Project image">
                             <a class="gold-underline link-offset-2" href="https://kaurvs23.ikt.khk.ee/programmeerimise_alused/T%c3%a4ringum%c3%a4ng/" target="_blank"><h4 class="card-title mt-3 stretched-link cardo">Dice Throw Generator</h4></a>
@@ -143,10 +162,10 @@
                     </div>
                 </div>
                 <div class="col-sm-8 col-md-7 col-lg-4 mb-5">
-                    <div class="card h-100">
+                    <div class="card h-100 hidden">
                         <div class="card-body text-center d-flex flex-column">
                             <img src="./img/project-image03.png" class="card-img-top " alt="Project image">
-                            <a class="gold-underline link-offset-2" href="https://kaurvs23.ikt.khk.ee/programmeerimise_alused/Nord%20Pool%20igal%20pool/" target="_blank"><h4 class="card-title mt-3 stretched-link cardo">Dice Throw Generator</h4></a>
+                            <a class="gold-underline link-offset-2" href="https://kaurvs23.ikt.khk.ee/programmeerimise_alused/Nord%20Pool%20igal%20pool/" target="_blank"><h4 class="card-title mt-3 stretched-link cardo">Match Three Game</h4></a>
                             <p class="card-text p-4 flex-grow-1">A simple reaction speed game where you have to wait for the right moment to match 3 card suits of any kind.</p>
                             <div class="card-footer text-body-secondary">Javascript</div>
                         </div>
@@ -155,7 +174,7 @@
             </div>
             <div class="row text-center d-flex justify-content-center hidden">
                 <div class="col-sm-8 col-md-7 col-lg-4 mb-5">
-                    <div class="card h-100">
+                    <div class="card h-100 hidden">
                         <div class="card-body text-center d-flex flex-column">
                             <img src="./img/project-image04.png" class="card-img-top" alt="Project image">
                             <a class="gold-underline link-offset-2" href="https://kaurvs23.ikt.khk.ee/veebiarendus/OrkGame/" target="_blank"><h4 class="card-title mt-3 stretched-link cardo">Retro Game Webpage</h4></a>
@@ -165,7 +184,7 @@
                     </div>
                 </div>
                 <div class="col-sm-8 col-md-7 col-lg-4 mb-5">
-                    <div class="card h-100">
+                    <div class="card h-100 hidden">
                         <div class="card-body text-center d-flex flex-column">
                             <img src="./img/project-image06.png" class="card-img-top " alt="Project image">
                             <a class="gold-underline link-offset-2" href="https://kaurvs23.ikt.khk.ee/veebiarendus/Disain%20Firma/" target="_blank"><h4 class="card-title mt-3 stretched-link cardo">Design Studio Webpage</h4></a>
@@ -175,7 +194,7 @@
                     </div>
                 </div>
                 <div class="col-sm-8 col-md-7 col-lg-4 mb-5">
-                    <div class="card h-100">
+                    <div class="card h-100 hidden">
                         <div class="card-body text-center d-flex flex-column">
                             <img src="./img/project-image05.png" class="card-img-top " alt="Project image">
                             <a class="gold-underline link-offset-2" href="https://kaurvs23.ikt.khk.ee/veebiarendus/Raamatukogu/" target="_blank"><h4 class="card-title mt-3 stretched-link cardo">Library Webpage</h4></a>
@@ -190,18 +209,18 @@
     <hr>
     <!-- Contact section -->
     <section id="contact">
-        <div class="container-xl py-5 hidden">
+        <div class="container-xl py-5">
             <div class="row text-center d-flex justify-content-center">
                 <div class="col-sm-8">
-                    <div>
+                    <div class="hidden">
                         <h2 class="display-2 cardo highlight">Contact Me</h2>
-                        <p class="my-5">Feel free to contact me on any of the platforms below for more information or just to chat! You can also click <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal">here</a> to see my CV.</p>
+                        <p class="my-5">Feel free to contact me on any of the platforms below for more information or just to chat!</p>
                     </div>
                 </div>
             </div>
             <div class="row text-center d-flex justify-content-center">
                 <div class="col-sm-8">
-                    <div>
+                    <div class="hidden">
                         <ul class="list-group list-group-flush mt-5">
                             <li class="list-group-item ps-0 d-flex justify-content-between"><h5 class="mt-2"><i class="bi bi-envelope-fill"></i> Email</h5>kaur.tamm@voco.ee</li>
                             <li class="list-group-item ps-0 d-flex justify-content-between"><h5 class="mt-2"><i class="bi bi-telephone-fill"></i> Phone</h5>534 66 564</li>
@@ -209,24 +228,6 @@
                             <li class="list-group-item ps-0 d-flex justify-content-between"><h5 class="mt-2"><i class="bi bi-github"></i> Github</h5><a href="https://github.com/Gaor-jjj " target="_blank">gaor-jjj</a></li>
                             <li class="list-group-item ps-0 d-flex justify-content-between"><h5 class="mt-2"><i class="bi bi-file-earmark-person-fill"></i> Curriculum Vitae</h5><a href="" data-bs-toggle="modal" data-bs-target="#exampleModal">CV</a></li>
                         </ul>
-                    </div>
-                    <!-- Modal -->
-                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                        <div class="modal-dialog modal-lg">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Curriculum Vitae</h1>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body">
-                                    <object type="application/pdf" data="./Other/InteraktiivneCV.pdf" width="100%" height="600px">
-                                    </object>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -239,4 +240,22 @@
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
+ <!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Curriculum Vitae</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <object type="application/pdf" data="./Other/InteraktiivneCV.pdf"  width="100%" height="500px">
+                </object>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
 </html>
