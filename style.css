@@ -130,3 +130,11 @@ footer {
         transition: all 0.8s;
     }
 }
+/* Disable animation on small screens */
+@media (max-width: 768px) {
+    .hidden {
+        opacity: 1;
+        filter: blur(0);
+        transform: translateX(0);
+    }
+}
